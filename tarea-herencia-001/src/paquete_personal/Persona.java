@@ -10,7 +10,7 @@ package paquete_personal;
  * @author Chris
  */
 public class Persona {
-   
+
     private String nombres;
     private String apellidos;
     private int edad;
@@ -21,8 +21,7 @@ public class Persona {
         setApellidos(ap);
         setEdad(e);
         setCedula(c);
-        
-        
+
     }
 
     public String getNombres() {
@@ -56,12 +55,17 @@ public class Persona {
     public void setCedula(String c) {
         cedula = c;
     }
-    
+
     @Override
     public String toString() {
-        return String.format("\n\t\t%s %s\n\t\t%d años de edad\n\t\tCI: %s\n",getNombres()
-        ,getApellidos(),getEdad(),getCedula()        );
+        return String.format("\t%s "
+                + "%s\n"
+                + "\t\t%daños de edad\n"
+                + "\t\tCI: %s",
+                getNombres(),
+                getApellidos(),
+                getEdad(),
+                getCedula());
     }
-    
-    
+
 }

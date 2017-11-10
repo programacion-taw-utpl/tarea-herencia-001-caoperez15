@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package la_empresa;
+package paquete_laempresa;
 
 import paquete_personal.Trabajador;
 
@@ -12,12 +12,13 @@ import paquete_personal.Trabajador;
  * @author Chris
  */
 public class Empresa {
-    private String nombre;
-    private String nombre_siglas;  
-    private String ciudad_trabajadores; 
-    private Trabajador [] lista_trabajadores;
 
-    public Empresa(String nom,String no_si, String ciu_tra, Trabajador[] lis_tra) {
+    private String nombre;
+    private String nombre_siglas;
+    private String ciudad_trabajadores;
+    protected Trabajador[] lista_trabajadores;
+
+    public Empresa(String nom, String no_si, String ciu_tra, Trabajador lis_tra[]) {
         setNombre(nom);
         setNombre_siglas(no_si);
         setCiudad_trabajadores(ciu_tra);
@@ -31,8 +32,6 @@ public class Empresa {
     public void setNombre(String no) {
         nombre = no;
     }
-    
-    
 
     public String getNombre_siglas() {
         return nombre_siglas;
@@ -57,25 +56,16 @@ public class Empresa {
     public void setLista_trabajadores(Trabajador[] lis_tra) {
         lista_trabajadores = lis_tra;
     }
-    
-    public String obtener_lista_trabajadores() {
-        String cadena = "";
-        Trabajador[] arrayTrabajor = getLista_trabajadores();
-        for (int i = 0; i < arrayTrabajor.length; i++) {
-            cadena += "\n\t"+(i +1) + ")" + String.format("%s",
-                    arrayTrabajor[i].toString()
-                    
-            );
-         
-        }
 
-        return cadena;
-    }
-    
     @Override
     public String toString() {
-        return String.format("Empresa: %s\nSiglas: %s\nCiudad: %s\nLista Trabajadores: %s"
-                ,getNombre(),getNombre_siglas(),getCiudad_trabajadores(),obtener_lista_trabajadores());
+        return String.format("DATOS DE LA EMPRESA\n"
+                + "Empresa: %s\n"
+                + "Siglas: %s\n"
+                + "Ciudad: %s\n",
+                getNombre(),
+                getNombre_siglas(),
+                getCiudad_trabajadores());
     }
-    
+
 }

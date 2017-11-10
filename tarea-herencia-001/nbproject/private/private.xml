@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/tarea-herencia-001/src/la_empresa/Empresa_Privada.java</file>
-            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/tarea-herencia-001/src/la_empresa/Principal.java</file>
+            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/tarea-herencia-001/src/paquete_principal/Principal.java</file>
+            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/tarea-herencia-001/src/paquete_laempresa/Empresa.java</file>
+            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/tarea-herencia-001/src/paquete_laempresa/Empresa_Privada.java</file>
             <file>file:/C:/Users/Chris/Documents/NetBeansProjects/tarea-herencia-001/src/paquete_personal/Trabajador.java</file>
             <file>file:/C:/Users/Chris/Documents/NetBeansProjects/tarea-herencia-001/src/paquete_personal/Persona.java</file>
-            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/tarea-herencia-001/src/la_empresa/Empresa.java</file>
         </group>
     </open-files>
 </project-private>
